@@ -19,14 +19,13 @@ class LoginPageTestsFireFox(unittest.TestCase):
         page = self.page
 
         page.load()
-        self.assertIn("login", driver.title)
+        assert "Login" in driver.title
         page.enter_username()
         page.enter_password()
         page.click_sign_in()
-        self.assertIn("login", driver.title)
+        assert not "Login" in driver.title
 
     def test_show_password(self):
-        driver = self.driver
         page = self.page
 
         page.load()

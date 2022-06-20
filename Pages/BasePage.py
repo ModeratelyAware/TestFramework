@@ -1,3 +1,4 @@
+import this
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
@@ -40,5 +41,6 @@ class BasePage(object):
     def enter_data_in_field(self, element, data):
         element = find_element_by_css_selector(self.driver, element)
         element.send_keys(data)
+
 
 
