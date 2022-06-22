@@ -2,8 +2,8 @@ import unittest
 
 from selenium import webdriver
 
-from SeleniumPython.Pages.LoginPage import LoginPage
-from SeleniumPython.Locators.LoginPageLocators import LoginPageLocators
+from SeleniumUnitTest.Pages.LoginPage import LoginPage
+from SeleniumUnitTest.Locators.LoginPageLocators import LoginPageLocators
 
 
 class LoginPageTestsFireFox(unittest.TestCase):

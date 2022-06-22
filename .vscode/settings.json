@@ -2,7 +2,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./SeleniumPython",
+        "./SeleniumUnitTest",
         "-p",
         "*test*.py"
     ],

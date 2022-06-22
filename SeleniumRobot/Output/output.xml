@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220622 12:13:48.023" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\Steven\repos\vscode\TestFramework\Robot\Tests">
+<suite id="s1-s1" name="GuestHomePage" source="C:\Users\Steven\repos\vscode\TestFramework\Robot\Tests\GuestHomePage">
+<suite id="s1-s1-s1" name="NavigationMenuTest" source="C:\Users\Steven\repos\vscode\TestFramework\Robot\Tests\GuestHomePage\NavigationMenuTest.robot">
+<test id="s1-s1-s1-t1" name="Navigate to Home page" line="5">
+<kw name="Open Firefox" library="GuestHomePageResources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 12:13:48.257" level="INFO">Opening browser 'Firefox' to base url 'None'.</msg>
+<msg timestamp="20220622 12:13:48.258" level="INFO">Firefox driver log is always forced to to: C:\Users\Steven\repos\vscode\TestFramework\Robot\Output\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220622 12:13:48.246" endtime="20220622 12:13:52.994"/>
+</kw>
+<status status="PASS" starttime="20220622 12:13:48.246" endtime="20220622 12:13:52.995"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${homeUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220622 12:13:52.996" level="INFO">Opening url 'https://www.linkedin.com/'</msg>
+<status status="PASS" starttime="20220622 12:13:52.995" endtime="20220622 12:13:53.685"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${homeUrl}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220622 12:13:53.689" level="INFO">Current location is 'https://www.linkedin.com/'.</msg>
+<status status="PASS" starttime="20220622 12:13:53.685" endtime="20220622 12:13:53.690"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 12:13:53.691" endtime="20220622 12:13:54.197"/>
+</kw>
+<status status="PASS" starttime="20220622 12:13:48.244" endtime="20220622 12:13:54.198"/>
+</test>
+<test id="s1-s1-s1-t2" name="Click Discover in navigation menu" line="11">
+<kw name="Open Firefox to homepage" library="GuestHomePageResources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Firefox</arg>
+<arg>url=${homeUrl}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 12:13:54.202" level="INFO">Opening browser 'Firefox' to base url 'https://www.linkedin.com/'.</msg>
+<msg timestamp="20220622 12:13:54.203" level="INFO">Firefox driver log is always forced to to: C:\Users\Steven\repos\vscode\TestFramework\Robot\Output\geckodriver-3.log</msg>
+<status status="PASS" starttime="20220622 12:13:54.201" endtime="20220622 12:13:59.358"/>
+</kw>
+<status status="PASS" starttime="20220622 12:13:54.200" endtime="20220622 12:13:59.358"/>
+</kw>
+<kw name="Click Discover" library="GuestHomePageResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:${discover}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 12:13:59.360" level="INFO">Clicking element 'css:.top-nav-menu &gt; li:nth-child(1) &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220622 12:13:59.359" endtime="20220622 12:14:00.115"/>
+</kw>
+<status status="PASS" starttime="20220622 12:13:59.358" endtime="20220622 12:14:00.116"/>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>expected=${discoverUrl}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20220622 12:14:00.119" level="INFO">Current location contains 'https://www.linkedin.com/pulse/'.</msg>
+<status status="PASS" starttime="20220622 12:14:00.117" endtime="20220622 12:14:00.120"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 12:14:00.121" endtime="20220622 12:14:00.629"/>
+</kw>
+<status status="PASS" starttime="20220622 12:13:54.199" endtime="20220622 12:14:00.629"/>
+</test>
+<test id="s1-s1-s1-t3" name="Click People in navigation menu" line="17">
+<kw name="Open Firefox to homepage" library="GuestHomePageResources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Firefox</arg>
+<arg>url=${homeUrl}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 12:14:00.633" level="INFO">Opening browser 'Firefox' to base url 'https://www.linkedin.com/'.</msg>
+<msg timestamp="20220622 12:14:00.635" level="INFO">Firefox driver log is always forced to to: C:\Users\Steven\repos\vscode\TestFramework\Robot\Output\geckodriver-4.log</msg>
+<status status="PASS" starttime="20220622 12:14:00.633" endtime="20220622 12:14:05.511"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:00.632" endtime="20220622 12:14:05.511"/>
+</kw>
+<kw name="Click People" library="GuestHomePageResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:${people}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 12:14:05.513" level="INFO">Clicking element 'css:.top-nav-menu &gt; li:nth-child(2) &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220622 12:14:05.512" endtime="20220622 12:14:05.720"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:05.512" endtime="20220622 12:14:05.721"/>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>expected=${peopleUrl}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20220622 12:14:05.725" level="INFO">Current location contains 'https://www.linkedin.com/pub/'.</msg>
+<status status="PASS" starttime="20220622 12:14:05.721" endtime="20220622 12:14:05.726"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 12:14:05.726" endtime="20220622 12:14:06.256"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:00.631" endtime="20220622 12:14:06.256"/>
+</test>
+<test id="s1-s1-s1-t4" name="Click Learning in navigation menu" line="23">
+<kw name="Open Firefox to homepage" library="GuestHomePageResources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Firefox</arg>
+<arg>url=${homeUrl}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 12:14:06.260" level="INFO">Opening browser 'Firefox' to base url 'https://www.linkedin.com/'.</msg>
+<msg timestamp="20220622 12:14:06.262" level="INFO">Firefox driver log is always forced to to: C:\Users\Steven\repos\vscode\TestFramework\Robot\Output\geckodriver-5.log</msg>
+<status status="PASS" starttime="20220622 12:14:06.259" endtime="20220622 12:14:11.106"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:06.259" endtime="20220622 12:14:11.107"/>
+</kw>
+<kw name="Click Learning" library="GuestHomePageResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:${learning}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 12:14:11.108" level="INFO">Clicking element 'css:.top-nav-menu &gt; li:nth-child(3) &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220622 12:14:11.108" endtime="20220622 12:14:11.813"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:11.107" endtime="20220622 12:14:11.814"/>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>expected=${learningUrl}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20220622 12:14:11.817" level="INFO">Current location contains 'https://www.linkedin.com/learning/'.</msg>
+<status status="PASS" starttime="20220622 12:14:11.814" endtime="20220622 12:14:11.818"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 12:14:11.818" endtime="20220622 12:14:12.329"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:06.257" endtime="20220622 12:14:12.330"/>
+</test>
+<test id="s1-s1-s1-t5" name="Click Jobs in navigation menu" line="29">
+<kw name="Open Firefox to homepage" library="GuestHomePageResources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Firefox</arg>
+<arg>url=${homeUrl}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 12:14:12.333" level="INFO">Opening browser 'Firefox' to base url 'https://www.linkedin.com/'.</msg>
+<msg timestamp="20220622 12:14:12.335" level="INFO">Firefox driver log is always forced to to: C:\Users\Steven\repos\vscode\TestFramework\Robot\Output\geckodriver-6.log</msg>
+<status status="PASS" starttime="20220622 12:14:12.333" endtime="20220622 12:14:17.171"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:12.332" endtime="20220622 12:14:17.171"/>
+</kw>
+<kw name="Click Jobs" library="GuestHomePageResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:${jobs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 12:14:17.174" level="INFO">Clicking element 'css:.top-nav-menu &gt; li:nth-child(4) &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220622 12:14:17.172" endtime="20220622 12:14:18.098"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:17.172" endtime="20220622 12:14:18.098"/>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>expected=${jobsUrl}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20220622 12:14:18.111" level="INFO">Current location contains 'https://www.linkedin.com/jobs/'.</msg>
+<status status="PASS" starttime="20220622 12:14:18.099" endtime="20220622 12:14:18.113"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 12:14:18.113" endtime="20220622 12:14:18.648"/>
+</kw>
+<status status="PASS" starttime="20220622 12:14:12.331" endtime="20220622 12:14:18.648"/>
+</test>
+<status status="PASS" starttime="20220622 12:13:48.057" endtime="20220622 12:14:18.649"/>
+</suite>
+<status status="PASS" starttime="20220622 12:13:48.053" endtime="20220622 12:14:18.652"/>
+</suite>
+<status status="PASS" starttime="20220622 12:13:48.026" endtime="20220622 12:14:18.654"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="GuestHomePage">Tests.GuestHomePage</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1" name="NavigationMenuTest">Tests.GuestHomePage.NavigationMenuTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
