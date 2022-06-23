@@ -2,8 +2,8 @@ import unittest
 
 from selenium import webdriver
 
-from SeleniumUnitTest.Pages.LoginPage import LoginPage
-from SeleniumUnitTest.Locators.LoginPageLocators import LoginPageLocators
+from seleniumunittest.pages.login_page import LoginPage
+from seleniumunittest.locators.login_page_locators import LoginPageLocators
 
 
 class LoginPageTestsFireFox(unittest.TestCase):
@@ -23,7 +23,7 @@ class LoginPageTestsFireFox(unittest.TestCase):
         page.enter_username()
         page.enter_password()
         page.click_sign_in()
-        assert not "Login" in driver.title
+        assert "Login" not in driver.title
 
     def test_show_password(self):
         page = self.page
@@ -34,8 +34,5 @@ class LoginPageTestsFireFox(unittest.TestCase):
         page.show_password()
         assert page.is_password_visible()
 
-
     def tearDown(self):
         self.driver.quit()
-
-

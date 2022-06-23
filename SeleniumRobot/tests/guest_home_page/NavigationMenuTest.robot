@@ -1,5 +1,5 @@
 *** Settings ***
-Resource   ../../Resources/GuestHomePageResources.robot
+Resource   ../../Resources/guest_home_page_resources.robot
 
 *** Test Cases ***
 Navigate to Home page

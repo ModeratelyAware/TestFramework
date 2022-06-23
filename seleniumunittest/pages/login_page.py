@@ -1,6 +1,6 @@
 from selenium.webdriver.remote.webdriver import WebDriver
-from SeleniumUnitTest.Locators.LoginPageLocators import LoginPageLocators
-from SeleniumUnitTest.Pages.BasePage import BasePage
+from seleniumunittest.locators.login_page_locators import LoginPageLocators
+from seleniumunittest.pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
