@@ -2,32 +2,26 @@
 Resource   ../../Resources/guest_home_page_resources.robot
 
 *** Test Cases ***
-Navigate to Home page
-    Open Firefox
-    Go To                 ${homeUrl}
-    Location Should Be    ${homeUrl}
-    Close Browser
-
 Click Discover in navigation menu
-    Open Firefox to homepage
+    Open Home Page
     Click Discover
-    Location Should Contain    expected=${discoverUrl}
+    Location Should Contain    expected=${discover_url}
     Close Browser
 
 Click People in navigation menu
-    Open Firefox to homepage
+    Open Home Page
     Click People
-    Location Should Contain    expected=${peopleUrl}
+    Location Should Contain    expected=${people_url}
     Close Browser
 
 Click Learning in navigation menu
-    Open Firefox to homepage
+    Open Home Page
     Click Learning
-    Location Should Contain    expected=${learningUrl}
+    Location Should Contain    expected=${learning_url}
     Close Browser
 
 Click Jobs in navigation menu
-    Open Firefox to homepage
+    Open Home Page
     Click Jobs
-    Location Should Contain    expected=${jobsUrl}
+    Location Should Contain    expected=${jobs_url}
     Close Browser

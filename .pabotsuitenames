@@ -1,0 +1,5 @@
+datasources:9da30453b91ae596633f18b5b21cb240bee99549
+commandlineoptions:9c48bbf49ca30910ac9eca958764026403e6525c
+suitesfrom:no-suites-from-option
+file:b1351870a211040263186e8f51c67b78df782f10
+--suite Tests.Guest Home Page.NavigationMenuTest
