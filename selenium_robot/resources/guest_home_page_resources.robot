@@ -31,7 +31,7 @@ ${DESIRED_CAPABILITIES}
     ...  browsername:${BROWSER_NAME},
     ...  version:${VERSION}
 
-#Command: pabot -d seleniumrobot/output -A seleniumrobot/chrome_config.txt seleniumrobot/tests
+# Command: pabot -d seleniumrobot/output -A seleniumrobot/chrome_config.txt seleniumrobot/tests
 
 *** Keywords ***
 Open Home Page

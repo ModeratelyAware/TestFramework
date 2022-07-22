@@ -1,6 +1,6 @@
 from selenium.webdriver.remote.webdriver import WebDriver
-from seleniumunittest.locators.login_page_locators import LoginPageLocators
-from seleniumunittest.pages.base_page import BasePage
+from selenium_python.locators.login_page_locators import LoginPageLocators
+from selenium_python.pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
@@ -24,4 +24,5 @@ class LoginPage(BasePage):
         return self.check_attribute_in_element_for_value(
             self.locators.PASSWORD_FIELD,
             self.locators.PASSWORD_FIELD_TYPE,
-            self.locators.PASSWORD_FIELD_TYPE_TEXT)
+            self.locators.PASSWORD_FIELD_TYPE_TEXT,
+        )

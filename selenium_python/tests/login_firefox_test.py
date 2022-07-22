@@ -1,13 +1,10 @@
 import unittest
-
 from selenium import webdriver
-
-from seleniumunittest.pages.login_page import LoginPage
-from seleniumunittest.locators.login_page_locators import LoginPageLocators
+from selenium_python.pages.login_page import LoginPage
+from selenium_python.locators.login_page_locators import LoginPageLocators
 
 
 class LoginPageTestsFireFox(unittest.TestCase):
-
     def setUp(self):
         self.locators = LoginPageLocators()
         self.driver = webdriver.Firefox()
