@@ -5,7 +5,7 @@ Small project using Python, Selenium, Robot Framework, and Sauce Labs to familia
 For Selenium Python, my goal was to setup a very basic representation of the page object model and running automated tests using unittest. The tests are run with a locally specified driver.
 
 ### Selenium Robot
-For Selenium Robot, my goal was to push automated tests using the SeleniumLibrary to Sauce Labs. This was accomplished by storing system variables of my Sauce Labs credentials and using Robot to access them.
+For Selenium Robot, my goal was to push automated tests using the SeleniumLibrary to Sauce Labs. This was accomplished by storing system variables of my Sauce Labs credentials, using Robot to access them, and running a command with a config.txt parameter to specify the desired test environment on Sauce Labs.
 
 #### Usage
 `pabot -d selenium_robot/output -A selenium_robot/chrome_config.txt selenium_robot/tests`
