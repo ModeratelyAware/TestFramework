@@ -15,7 +15,6 @@ ${people}      ${top_nav_menu} > li:nth-child(2) > a:nth-child(1)
 ${learning}    ${top_nav_menu} > li:nth-child(3) > a:nth-child(1)
 ${jobs}        ${top_nav_menu} > li:nth-child(4) > a:nth-child(1)
 
-${BROWSER}       ${browser_name}
 ${BROWSER_NAME}  ${browser_name}
 ${PLATFORM}      ${platform}
 ${VERSION}       ${version}
@@ -26,12 +25,12 @@ ${SAUCE_ACCESS_KEY}  %{SAUCE_ACCESS_KEY}
 ${REMOTE_URL}        https://${SAUCE_USERNAME}:${SAUCE_ACCESS_KEY}@ondemand.us-west-1.saucelabs.com:443/wd/hub
 
 ${DESIRED_CAPABILITIES}
-    ...  name:${BROWSER},
+    ...  name:${BROWSER_NAME},
     ...  platform:${PLATFORM},
     ...  browsername:${BROWSER_NAME},
     ...  version:${VERSION}
 
-# Command: pabot -d selenium_robot/output -A selenium_robot/chrome_config.txt seleniumrobot/tests
+# Command: pabot -d selenium_robot/output -A selenium_robot/chrome_config.txt selenium_robot/tests
 
 *** Keywords ***
 Open Home Page
