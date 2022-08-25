@@ -1,5 +1,5 @@
 # TestFramework
-Small project using Python, Selenium, Robot Framework, and Sauce Labs to familiarize myself more with test automation, the page object model, and css selectors. I had no prior knowledge of any of these before diving in but it was not very difficult to grasp.
+Small project using Python, Selenium, Robot Framework, and Sauce Labs to familiarize myself more with test automation, the page object model, and css selectors.
 
 ### Selenium Python
 For Selenium Python, my goal was to setup a very basic representation of the page object model and to run automated tests using unittest. The tests are run with a locally specified driver.
